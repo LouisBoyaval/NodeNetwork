@@ -63,7 +63,7 @@ namespace ExampleCodeGenApp.Views
 				this.WhenAnyObservable(v => v.ViewModel.StartAutoLayoutLive.IsExecuting)
 					.Select((isRunning) => isRunning ? Visibility.Visible : Visibility.Collapsed)
 					.BindTo(this, v => v.stopAutoLayoutLiveButton.Visibility);
-			});
+	    });
 
             this.ViewModel = new MainViewModel();
         }
